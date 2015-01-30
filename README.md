@@ -8,4 +8,4 @@ The getpack script for downloading sound packs
 `python3 getInstruments.py`
 
 ## Dependancies ##
-Python3
+* Python3
