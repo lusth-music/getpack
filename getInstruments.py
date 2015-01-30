@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 import urllib.request
 from html.parser import HTMLParser
