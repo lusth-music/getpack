@@ -7,5 +7,7 @@ The getpack script for downloading sound packs
 ## Run instructions ##
 `python3 getInstruments.py`
 
-## Dependancies ##
-* Python3
+## Dependencies ##
+* [Bash](http://www.gnu.org/software/bash/)
+* [Python3](https://www.python.org/)
+* [Songlib](http://songlib.cs.ua.edu/) - The C Library for Music Composition
