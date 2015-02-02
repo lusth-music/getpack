@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+#
+# Author: Joshua Wolfe (jbwolfe)
+# The getpack script for downloading and installing 
+#     all songlib instrument sample packs.
 
 import os
 import urllib.request
