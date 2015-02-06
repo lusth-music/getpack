@@ -20,7 +20,12 @@ class parseClass(HTMLParser):
       os.system("rm -f *")
 
       print("Downloading instrument sample pack: " + instrument)
-      os.system("getpack \'"+instrument+"\'")
+      try:
+        os.system("getpackd \'"+instrument+"\'")
+      except:
+        print("Error: could not getpack "+instrument)
+        return -1
+
       print(instrument)
 
       print("Cleaning up getpack workspace")
@@ -38,6 +43,7 @@ def main():
     text = data.decode('utf-8')
   except:
     print("Error: could not reach songlib sample library")
+    return -1
 
   parser = parseClass()
   parser.feed(text.strip())
