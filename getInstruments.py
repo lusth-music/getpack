@@ -17,11 +17,11 @@ class parseClass(HTMLParser):
       if not os.path.exists("./tempGetpackWorkspace"):
         os.mkdir("./tempGetpackWorkspace")
       os.chdir("./tempGetpackWorkspace")
-      os.system("rm -f *")
+      os.system("rm -f -r *")
 
       print("Downloading instrument sample pack: " + instrument)
       try:
-        os.system("getpackd \'"+instrument+"\'")
+        os.system("getpack \'"+instrument+"\'")
       except:
         print("Error: could not getpack "+instrument)
         return -1
@@ -29,7 +29,7 @@ class parseClass(HTMLParser):
       print(instrument)
 
       print("Cleaning up getpack workspace")
-      os.system("rm -f *")
+      os.system("rm -f -r *")
       os.chdir("..")
       os.rmdir("./tempGetpackWorkspace")
       print("Finished downloading instument sample pack: " + instrument + '\n')
