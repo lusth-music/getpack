@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #
 # Author: Joshua Wolfe (jbwolfe)
 # The getpack script for downloading and installing 
